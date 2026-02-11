@@ -15,209 +15,225 @@ body {
 }
 
 .container {
-    width: 85%;
+    width: 88%;
     max-width: 1100px;
     margin: auto;
-    padding: 80px 0;
+    padding: 45px 0;
 }
 
-h1, h2 {
-    font-weight: 500;
-    letter-spacing: 1px;
+.section {
+    margin-bottom: 55px;
 }
 
 h1 {
     font-size: 42px;
-    margin-bottom: 10px;
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #5bb3a6;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
 }
 
 h2 {
-    font-size: 22px;
-    margin-bottom: 40px;
+    font-size: 14px;
     color: #5bb3a6;
     text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 25px;
 }
 
-.section {
-    margin-bottom: 100px;
+.hero {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 45px;
+    align-items: center;
 }
 
-.hero p {
-    max-width: 700px;
-    font-size: 18px;
+.photo-placeholder {
+    width: 260px;
+    height: 320px;
+    background-color: #132238;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #5bb3a6;
+    font-size: 14px;
+}
+
+.hero-text p {
+    max-width: 650px;
     color: #cfd6df;
+    font-size: 17px;
+    margin-top: 0;
 }
 
 .grid-4 {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
 }
 
 .card {
     border: 1px solid rgba(255,255,255,0.08);
-    padding: 30px;
+    padding: 20px;
     border-radius: 6px;
     background-color: #132238;
 }
 
 .card h3 {
-    margin-top: 0;
-    color: #ffffff;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.card ul {
+    padding-left: 18px;
+    margin: 0;
+}
+
+.card li {
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #cfd6df;
 }
 
 .job {
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 
-.job h3 {
-    margin-bottom: 5px;
+.job-title {
+    font-weight: 600;
 }
 
-.job span {
+.job-company {
     color: #5bb3a6;
     font-size: 14px;
+    margin-bottom: 6px;
 }
 
 ul {
     padding-left: 18px;
 }
 
-.footer {
-    text-align: center;
-    font-size: 14px;
-    color: #8fa3b7;
-    padding-bottom: 60px;
+li {
+    margin-bottom: 6px;
+    color: #cfd6df;
 }
 
-a {
-    color: #5bb3a6;
-    text-decoration: none;
+.footer {
+    font-size: 13px;
+    color: #8892a0;
+    margin-top: 40px;
 }
 </style>
 </head>
 
 <body>
+<div class="container">
 
-<div class="container hero section">
-    <h1>Patrick Gritti</h1>
-    <p><strong>Strategic Marketing & Operations Leader</strong></p>
-    <p>
-        Senior executive with over 20 years of experience across marketing, communication and operational coordination 
-        in structured and regulated environments. 
-        I bridge strategic vision with operational execution, structuring organisations, aligning stakeholders 
-        and driving performance through disciplined governance and data-informed decision-making.
-    </p>
-</div>
+    <!-- HERO -->
+    <div class="section hero">
+        <div class="photo-placeholder">
+            Your Photo Here
+        </div>
 
-<div class="container section">
-    <h2>Strategic Capabilities</h2>
-    <div class="grid-4">
-        <div class="card">
-            <h3>Marketing Vision & Positioning</h3>
+        <div class="hero-text">
+            <h1>Patrick Gritti</h1>
+            <div class="subtitle">Strategic Marketing & Operations Leader</div>
+            <p>
+                Senior executive with over 20 years of experience leading marketing, communication and operational coordination in structured and regulated environments. 
+                Expertise in aligning strategic vision with governance frameworks, performance architecture and cross-functional execution.
+            </p>
+        </div>
+    </div>
+
+    <!-- STRATEGIC CAPABILITIES -->
+    <div class="section">
+        <h2>Strategic Capabilities</h2>
+        <div class="grid-4">
+            <div class="card">
+                <h3>Marketing Vision & Positioning</h3>
+                <ul>
+                    <li>Define market positioning aligned with growth objectives</li>
+                    <li>Align brand and business strategy</li>
+                    <li>Structure scalable marketing frameworks</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Organisational Structuring</h3>
+                <ul>
+                    <li>Design operational processes</li>
+                    <li>Define governance and KPIs</li>
+                    <li>Clarify roles and accountability</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Data-Informed Decision Support</h3>
+                <ul>
+                    <li>Build executive dashboards</li>
+                    <li>Structure reporting architecture</li>
+                    <li>Translate insights into action</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Cross-Functional Leadership</h3>
+                <ul>
+                    <li>Align marketing, sales & operations</li>
+                    <li>Drive disciplined execution</li>
+                    <li>Coordinate multi-stakeholder environments</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- EXPERIENCE -->
+    <div class="section">
+        <h2>Professional Experience</h2>
+
+        <div class="job">
+            <div class="job-title">Deputy Director of Operations</div>
+            <div class="job-company">AZ Medical | 2022 – 2025</div>
             <ul>
-                <li>Define clear market positioning</li>
-                <li>Align brand with business maturity</li>
-                <li>Structure scalable marketing frameworks</li>
+                <li>Structured governance and operational processes</li>
+                <li>Designed KPI monitoring and executive dashboards</li>
+                <li>Aligned cross-functional teams around strategic objectives</li>
             </ul>
         </div>
-        <div class="card">
-            <h3>Organisational Structuring</h3>
+
+        <div class="job">
+            <div class="job-title">Group Head of Marketing & Communications</div>
+            <div class="job-company">Alter Domus | 2019 – 2022</div>
             <ul>
-                <li>Design operational processes</li>
-                <li>Clarify governance and KPIs</li>
-                <li>Align cross-functional workflows</li>
-            </ul>
-        </div>
-        <div class="card">
-            <h3>Data-Informed Performance</h3>
-            <ul>
-                <li>Build executive dashboards</li>
-                <li>Structure reporting frameworks</li>
-                <li>Translate insights into decisions</li>
-            </ul>
-        </div>
-        <div class="card">
-            <h3>Cross-Functional Leadership</h3>
-            <ul>
-                <li>Coordinate marketing, sales & operations</li>
-                <li>Drive alignment around shared objectives</li>
-                <li>Ensure disciplined execution</li>
+                <li>Structured international marketing ecosystem</li>
+                <li>Built executive-level performance dashboards</li>
+                <li>Strengthened marketing-sales alignment</li>
             </ul>
         </div>
     </div>
-</div>
 
-<div class="container section">
-    <h2>Professional Experience</h2>
-
-    <div class="job">
-        <h3>Deputy Director of Operations – AZ Medical</h3>
-        <span>2022 – 2025 | France</span>
+    <!-- EDUCATION -->
+    <div class="section">
+        <h2>Education & Skills</h2>
         <ul>
-            <li>Structured operational governance frameworks</li>
-            <li>Designed KPI monitoring systems and dashboards</li>
-            <li>Aligned cross-functional teams around strategic objectives</li>
-            <li>Improved organisational clarity and execution discipline</li>
+            <li>Postgraduate Diploma in European Management – Royal Holloway, University of London</li>
+            <li>BA in Language & Information Technology – University of Wolverhampton</li>
+            <li>Advanced Excel, Power BI, SQL, Python (ongoing development)</li>
+            <li>CRM systems & reporting architecture</li>
+            <li>Languages: French (Native), English (Fluent)</li>
         </ul>
     </div>
 
-    <div class="job">
-        <h3>Group Head of Marketing & Communications – Alter Domus</h3>
-        <span>2019 – 2022 | Luxembourg</span>
-        <ul>
-            <li>Structured international marketing ecosystem</li>
-            <li>Aligned CRM governance and reporting frameworks</li>
-            <li>Built executive-level performance dashboards</li>
-            <li>Strengthened alignment between marketing and sales</li>
-        </ul>
+    <div class="footer">
+        Contact: patgritti@gmail.com
     </div>
 
 </div>
-
-<div class="container section">
-    <h2>Education & Skills</h2>
-
-    <p><strong>Education</strong></p>
-    <ul>
-        <li>Postgraduate Diploma in European Management – Royal Holloway, University of London</li>
-        <li>BA in Language & Information Technology – University of Wolverhampton</li>
-        <li>Data Analyst Programme – OpenClassrooms</li>
-    </ul>
-
-    <p><strong>Technical Skills</strong></p>
-    <ul>
-        <li>Advanced Excel, Power BI, SQL (ongoing Python development)</li>
-        <li>CRM systems (Salesforce, Pardot)</li>
-        <li>Executive reporting & KPI architecture</li>
-    </ul>
-
-    <p><strong>Languages</strong></p>
-    <ul>
-        <li>French – Native</li>
-        <li>English – Fluent</li>
-    </ul>
-</div>
-
-<div class="container section">
-    <h2>Values & Availability</h2>
-    <ul>
-        <li>Immediate availability</li>
-        <li>Registered with ADEM (Luxembourg & cross-border)</li>
-        <li>Full mobility – Category A & B driving licences</li>
-        <li>Flexible for travel and multi-site responsibilities</li>
-    </ul>
-    <p>
-        Strong commitment to integrity, inclusion and corporate responsibility, 
-        with a consistent focus on building trusted long-term relationships 
-        and delivering sustainable value in regulated environments.
-    </p>
-</div>
-
-<div class="footer">
-    Contact: <a href="mailto:patgritti@gmail.com">patgritti@gmail.com</a>
-</div>
-
 </body>
 </html>
-
