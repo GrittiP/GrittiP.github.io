@@ -22,19 +22,19 @@ body {
 
 h1 {
     margin: 0;
-    font-size: 32px;
+    font-size: 34px;
     font-weight: 600;
 }
 
 h2 {
     font-size: 18px;
     font-weight: 400;
-    margin-top: 10px;
+    margin-top: 8px;
     color: #5bb3a6;
 }
 
 .section {
-    margin-top: 60px;
+    margin-top: 55px;
 }
 
 .section-title {
@@ -42,7 +42,7 @@ h2 {
     letter-spacing: 2px;
     text-transform: uppercase;
     color: #5bb3a6;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 
 .hero {
@@ -55,9 +55,23 @@ h2 {
     max-width: 600px;
 }
 
+.hero-text p {
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+.photo-frame {
+    padding: 8px;
+    background: linear-gradient(145deg, #0c2b3a, #12394d);
+    border-radius: 10px;
+}
+
 .hero img {
-    width: 180px;
-    border-radius: 6px;
+    width: 190px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
 }
 
 .cards {
@@ -68,17 +82,27 @@ h2 {
 
 .card {
     border: 1px solid #1e3a4a;
-    padding: 20px;
+    padding: 18px;
     border-radius: 6px;
+    background-color: #0d2536;
+}
+
+.card strong {
+    display: block;
+    margin-bottom: 8px;
 }
 
 ul {
     padding-left: 18px;
-    margin: 10px 0 0 0;
+    margin: 8px 0 0 0;
+}
+
+li {
+    margin-bottom: 6px;
 }
 
 .footer {
-    margin-top: 80px;
+    margin-top: 70px;
     font-size: 14px;
     color: #9fbac2;
 }
@@ -111,8 +135,10 @@ a:hover {
             </p>
         </div>
 
-        <!-- Remplacer photo.jpg par ta vraie photo -->
-        <img src="photo.jpg" alt="Patrick Gritti">
+        <div class="photo-frame">
+            <!-- Remplace photo.jpg par ta photo réelle -->
+            <img src="photo.jpg" alt="Patrick Gritti">
+        </div>
     </div>
 
     <!-- STRATEGIC CAPABILITIES -->
@@ -171,7 +197,7 @@ a:hover {
             <li>Improved organisational clarity and execution discipline</li>
         </ul>
 
-        <p style="margin-top:25px;"><strong>Group Head of Marketing & Communications – Alter Domus</strong> (2019–2022)</p>
+        <p style="margin-top:20px;"><strong>Group Head of Marketing & Communications – Alter Domus</strong> (2019–2022)</p>
         <ul>
             <li>Structured international marketing ecosystem</li>
             <li>Aligned CRM governance and reporting</li>
@@ -179,15 +205,30 @@ a:hover {
         </ul>
     </div>
 
-    <!-- EDUCATION & SKILLS -->
+    <!-- EDUCATION -->
     <div class="section">
-        <div class="section-title">Education & Skills</div>
+        <div class="section-title">Education</div>
 
         <ul>
-            <li>Postgraduate Diploma – Royal Holloway, University of London</li>
-            <li>Data Analyst Programme – OpenClassrooms</li>
-            <li>Advanced Excel, Power BI, SQL (ongoing Python development)</li>
-            <li>French (Native), English (Fluent)</li>
+            <li>
+                <strong>Data Analyst Training (ongoing)</strong> | OpenClassrooms  
+                (Power BI, SQL, Python & practical projects)
+            </li>
+
+            <li>
+                <strong>Postgraduate Diploma in European Management</strong> | 
+                Royal Holloway, University of London
+            </li>
+
+            <li>
+                <strong>BA in Language and Information Technology</strong> | 
+                University of Wolverhampton
+            </li>
+
+            <li>
+                <strong>IUT Techniques de Commercialisation & Marketing</strong> | 
+                Université Nancy II
+            </li>
         </ul>
     </div>
 
@@ -202,7 +243,7 @@ a:hover {
             <li>Flexible for travel and multi-site responsibilities</li>
         </ul>
 
-        <p style="margin-top:20px; max-width:700px;">
+        <p style="margin-top:15px; max-width:700px;">
             Strong commitment to integrity, inclusion and corporate responsibility,
             with a consistent focus on building trusted long-term relationships
             and delivering sustainable business value in regulated environments.
@@ -221,4 +262,3 @@ a:hover {
 
 </body>
 </html>
-
