@@ -3,63 +3,77 @@
 <head>
     <title>Patrick Gritti | Data Analyst</title>
     <meta charset="UTF-8">
+
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            background-color: #f4f6f9;
-            color: #333;
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            background-color: #f8f9fb;
+            color: #1c1c1c;
         }
 
         .container {
-            max-width: 900px;
-            margin: 40px auto;
-            background: white;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            max-width: 850px;
+            margin: 60px auto;
+            padding: 0 20px;
         }
 
         h1 {
+            font-size: 32px;
+            font-weight: 600;
             margin-bottom: 5px;
         }
 
         h2 {
+            font-size: 18px;
+            font-weight: 400;
             color: #555;
             margin-top: 0;
+            margin-bottom: 30px;
+        }
+
+        p.intro {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 40px;
         }
 
         h3 {
-            margin-top: 40px;
-            border-bottom: 2px solid #eee;
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 50px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #e0e0e0;
             padding-bottom: 8px;
         }
 
         ul {
-            padding-left: 20px;
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
         }
 
         a {
             text-decoration: none;
-            color: white;
-            background-color: #0078D4;
-            padding: 8px 14px;
-            border-radius: 6px;
-            display: inline-block;
-            margin: 6px 0;
-            font-size: 14px;
+            color: #1c1c1c;
+            border-bottom: 1px solid #bbb;
+            padding-bottom: 2px;
+            transition: all 0.2s ease;
         }
 
         a:hover {
-            background-color: #005fa3;
+            border-bottom: 1px solid #000;
         }
 
-        .section {
-            margin-bottom: 30px;
+        .video {
+            margin-top: 15px;
         }
 
         .footer {
-            margin-top: 40px;
+            margin-top: 60px;
             font-size: 14px;
             color: #777;
         }
@@ -67,40 +81,44 @@
 </head>
 
 <body>
-    <div class="container">
 
-        <h1>Patrick Gritti</h1>
-        <h2>Data Analyst orienté Business</h2>
+<div class="container">
 
-        <p>Portfolio réalisé dans le cadre du projet Aéroworld - OpenClassrooms</p>
+    <h1>Patrick Gritti</h1>
+    <h2>Data Analyst orienté Business</h2>
 
-        <div class="section">
-            <h3>📌 Livrables</h3>
-            <a href="Analyse_Besoins.pdf" target="_blank">Analyse des besoins</a><br>
-            <a href="Cahier_Des_Charges.pdf" target="_blank">Cahier des charges</a><br>
-            <a href="Gantt.pdf" target="_blank">Diagramme de Gantt</a><br>
-            <a href="Documentation_Technique.pdf" target="_blank">Documentation technique Power BI</a>
-        </div>
+    <p class="intro">
+        Portfolio réalisé dans le cadre du projet Aéroworld – OpenClassrooms.
+        Ce portfolio présente l’ensemble des livrables réalisés ainsi qu’une démonstration technique sur Power BI.
+    </p>
 
-        <div class="section">
-            <h3>📊 Dashboards</h3>
-            <a href="Dashboard_Profil.pdf" target="_blank">Dashboard Profil</a><br>
-            <a href="Dashboard_Veille.pdf" target="_blank">Dashboard Veille Métier</a><br>
-            <a href="Dashboard_Aeroworld.pdf" target="_blank">Dashboard Aéroworld</a>
-        </div>
+    <h3>Livrables</h3>
+    <ul>
+        <li><a href="Analyse_Besoins.pdf" target="_blank">Analyse des besoins</a></li>
+        <li><a href="Cahier_Des_Charges.pdf" target="_blank">Cahier des charges</a></li>
+        <li><a href="Gantt.pdf" target="_blank">Diagramme de Gantt</a></li>
+        <li><a href="Documentation_Technique.pdf" target="_blank">Documentation technique Power BI</a></li>
+    </ul>
 
-        <div class="section">
-            <h3>🎥 Vidéo de présentation</h3>
-            <a href="https://www.loom.com/share/c80ed81145274c029229ad526860aed6" target="_blank">
-                Voir la démonstration complète (5 minutes)
-            </a>
-        </div>
+    <h3>Dashboards</h3>
+    <ul>
+        <li><a href="Dashboard_Profil.pdf" target="_blank">Dashboard Profil</a></li>
+        <li><a href="Dashboard_Veille.pdf" target="_blank">Dashboard Veille Métier</a></li>
+        <li><a href="Dashboard_Aeroworld.pdf" target="_blank">Dashboard Aéroworld</a></li>
+    </ul>
 
-        <div class="footer">
-            Email : patgritti@gmail.com
-        </div>
-
+    <h3>Vidéo de présentation</h3>
+    <div class="video">
+        <a href="https://www.loom.com/share/c80ed81145274c029229ad526860aed6" target="_blank">
+            Voir la démonstration complète (5 minutes)
+        </a>
     </div>
+
+    <div class="footer">
+        Contact : patgritti@gmail.com
+    </div>
+
+</div>
+
 </body>
 </html>
-
