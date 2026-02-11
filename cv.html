@@ -6,116 +6,127 @@
 <title>Patrick Gritti | Strategic Marketing & Operations Leader</title>
 
 <style>
-
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #071c2c;
-    color: #e8f1f2;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: #071c26;
+  color: #e6f2f5;
+  line-height: 1.6;
 }
 
 .container {
-    max-width: 1000px;
-    margin: auto;
-    padding: 60px 40px;
+  max-width: 1000px;
+  margin: auto;
+  padding: 60px 30px;
 }
 
 h1 {
-    margin: 0;
-    font-size: 34px;
-    font-weight: 600;
+  font-size: 40px;
+  margin-bottom: 10px;
 }
 
 h2 {
-    font-size: 18px;
-    font-weight: 400;
-    margin-top: 8px;
-    color: #5bb3a6;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #4fd1c5;
+  margin-top: 60px;
+  margin-bottom: 20px;
 }
 
-.section {
-    margin-top: 55px;
+h3 {
+  margin-bottom: 10px;
 }
 
-.section-title {
-    font-size: 12px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #5bb3a6;
-    margin-bottom: 18px;
+.subtitle {
+  font-size: 20px;
+  color: #4fd1c5;
+  margin-bottom: 20px;
 }
 
 .hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
 }
 
 .hero-text {
-    max-width: 600px;
+  flex: 1;
 }
 
-.hero-text p {
-    margin-top: 15px;
-    line-height: 1.6;
+.hero-photo {
+  flex: 0 0 220px;
+  text-align: center;
 }
 
-.photo-frame {
-    padding: 8px;
-    background: linear-gradient(145deg, #0c2b3a, #12394d);
-    border-radius: 10px;
+.hero-photo img {
+  width: 220px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 3px solid #4fd1c5;
+  box-shadow: 0 0 25px rgba(79, 209, 197, 0.3);
 }
 
-.hero img {
-    width: 190px;
-    height: 240px;
-    object-fit: cover;
-    border-radius: 8px;
-    display: block;
-}
-
-.cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+.capabilities {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
 }
 
 .card {
-    border: 1px solid #1e3a4a;
-    padding: 18px;
-    border-radius: 6px;
-    background-color: #0d2536;
-}
-
-.card strong {
-    display: block;
-    margin-bottom: 8px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 25px;
+  border-radius: 10px;
 }
 
 ul {
-    padding-left: 18px;
-    margin: 8px 0 0 0;
+  padding-left: 20px;
 }
 
-li {
-    margin-bottom: 6px;
+.video-section {
+  margin-top: 60px;
 }
 
-.footer {
-    margin-top: 70px;
-    font-size: 14px;
-    color: #9fbac2;
+.video-placeholder {
+  border: 1px solid rgba(255,255,255,0.15);
+  background: rgba(255,255,255,0.03);
+  border-radius: 12px;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.video-placeholder p {
+  margin: 10px 0;
+}
+
+.video-placeholder button {
+  margin-top: 20px;
+  padding: 8px 18px;
+  background: transparent;
+  border: 1px solid #4fd1c5;
+  color: #4fd1c5;
+  border-radius: 6px;
+  cursor: not-allowed;
+  opacity: 0.7;
 }
 
 a {
-    color: #5bb3a6;
-    text-decoration: none;
+  color: #4fd1c5;
+  text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
+.footer {
+  margin-top: 60px;
+  font-size: 14px;
+  opacity: 0.8;
+}
 </style>
 </head>
 
@@ -123,140 +134,117 @@ a:hover {
 
 <div class="container">
 
-    <!-- HERO -->
-    <div class="hero">
-        <div class="hero-text">
-            <h1>Patrick Gritti</h1>
-            <h2>Strategic Marketing & Operations Leader</h2>
-            <p>
-                Senior professional with over 20 years of experience structuring marketing,
-                governance and operational environments in regulated organisations.
-                Bridging strategic vision, disciplined execution and data-informed decision-making.
-            </p>
-        </div>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <h1>Patrick Gritti</h1>
+    <div class="subtitle">Strategic Marketing & Operations Leader</div>
+    <p>
+      Senior professional with over 20 years of experience structuring marketing, governance and operational environments in regulated organisations. 
+      Bridging strategic vision, disciplined execution and data-informed decision-making.
+    </p>
+  </div>
 
-        <div class="photo-frame">
-            <!-- Remplace photo.jpg par ta photo réelle -->
-            <img src="photo.jpg" alt="Patrick Gritti">
-        </div>
-    </div>
+  <div class="hero-photo">
+    <!-- Remplace photo.jpg par le nom exact de ta photo -->
+    <img src="photo.jpg" alt="Patrick Gritti">
+  </div>
+</section>
 
-    <!-- STRATEGIC CAPABILITIES -->
-    <div class="section">
-        <div class="section-title">Strategic Capabilities</div>
+<!-- VIDEO -->
+<section class="video-section">
+  <h2>Executive Introduction</h2>
+  <div class="video-placeholder">
+    <p>🎥 Executive Introduction Video</p>
+    <p>A short strategic overview of my leadership approach and impact.</p>
+    <button disabled>Coming Soon</button>
+  </div>
+</section>
 
-        <div class="cards">
+<!-- CAPABILITIES -->
+<h2>Strategic Capabilities</h2>
+<div class="capabilities">
 
-            <div class="card">
-                <strong>Marketing Vision & Positioning</strong>
-                <ul>
-                    <li>Define positioning aligned with growth objectives</li>
-                    <li>Structure scalable marketing frameworks</li>
-                    <li>Align marketing with sales and operations</li>
-                </ul>
-            </div>
+  <div class="card">
+    <h3>Marketing Vision & Positioning</h3>
+    <ul>
+      <li>Define positioning aligned with growth objectives</li>
+      <li>Structure scalable marketing frameworks</li>
+      <li>Align marketing with sales and operations</li>
+    </ul>
+  </div>
 
-            <div class="card">
-                <strong>Operational Structuring</strong>
-                <ul>
-                    <li>Design governance and KPI frameworks</li>
-                    <li>Translate strategy into executable processes</li>
-                    <li>Clarify roles and accountability</li>
-                </ul>
-            </div>
+  <div class="card">
+    <h3>Operational Structuring</h3>
+    <ul>
+      <li>Design governance and KPI frameworks</li>
+      <li>Translate strategy into executable processes</li>
+      <li>Clarify roles and accountability</li>
+    </ul>
+  </div>
 
-            <div class="card">
-                <strong>Data-Informed Decision Support</strong>
-                <ul>
-                    <li>Build executive dashboards</li>
-                    <li>Structure CRM reporting environments</li>
-                    <li>Translate insights into strategic decisions</li>
-                </ul>
-            </div>
+  <div class="card">
+    <h3>Data-Informed Decision Support</h3>
+    <ul>
+      <li>Build executive dashboards</li>
+      <li>Structure CRM reporting environments</li>
+      <li>Translate insights into strategic decisions</li>
+    </ul>
+  </div>
 
-            <div class="card">
-                <strong>Cross-Functional Leadership</strong>
-                <ul>
-                    <li>Align marketing, sales and operations</li>
-                    <li>Drive structured execution</li>
-                    <li>Support organisational transformation</li>
-                </ul>
-            </div>
+  <div class="card">
+    <h3>Cross-Functional Leadership</h3>
+    <ul>
+      <li>Align marketing, sales and operations</li>
+      <li>Drive structured execution</li>
+      <li>Support organisational transformation</li>
+    </ul>
+  </div>
 
-        </div>
-    </div>
+</div>
 
-    <!-- PROFESSIONAL EXPERIENCE -->
-    <div class="section">
-        <div class="section-title">Professional Experience</div>
+<!-- EXPERIENCE -->
+<h2>Professional Experience</h2>
 
-        <p><strong>Deputy Director of Operations – AZ Medical</strong> (2022–2025)</p>
-        <ul>
-            <li>Structured operational governance frameworks</li>
-            <li>Designed KPI monitoring and dashboards</li>
-            <li>Improved organisational clarity and execution discipline</li>
-        </ul>
+<h3>Deputy Director of Operations – AZ Medical (2022–2025)</h3>
+<ul>
+  <li>Structured operational governance frameworks</li>
+  <li>Designed KPI monitoring and dashboards</li>
+  <li>Improved organisational clarity and execution discipline</li>
+</ul>
 
-        <p style="margin-top:20px;"><strong>Group Head of Marketing & Communications – Alter Domus</strong> (2019–2022)</p>
-        <ul>
-            <li>Structured international marketing ecosystem</li>
-            <li>Aligned CRM governance and reporting</li>
-            <li>Built executive-level performance dashboards</li>
-        </ul>
-    </div>
+<h3>Group Head of Marketing & Communications – Alter Domus (2019–2022)</h3>
+<ul>
+  <li>Structured international marketing ecosystem</li>
+  <li>Aligned CRM governance and reporting</li>
+  <li>Built executive-level performance dashboards</li>
+</ul>
 
-    <!-- EDUCATION -->
-    <div class="section">
-        <div class="section-title">Education</div>
+<!-- EDUCATION -->
+<h2>Education</h2>
+<ul>
+  <li><strong>Data Analyst Training (ongoing)</strong> | OpenClassrooms (Power BI, SQL, Python & practical projects)</li>
+  <li><strong>Postgraduate Diploma in European Management</strong> | Royal Holloway, University of London</li>
+  <li><strong>BA in Language and Information Technology</strong> | University of Wolverhampton</li>
+  <li><strong>IUT Techniques de Commercialisation & Marketing</strong> | Université Nancy II</li>
+</ul>
 
-        <ul>
-            <li>
-                <strong>Data Analyst Training (ongoing)</strong> | OpenClassrooms  
-                (Power BI, SQL, Python & practical projects)
-            </li>
+<!-- ADDITIONAL INFO -->
+<h2>Additional Information & Professional Values</h2>
+<ul>
+  <li>Immediate availability</li>
+  <li>Registered with ADEM (Luxembourg & cross-border opportunities)</li>
+  <li>Full mobility – Category A & B driving licences</li>
+  <li>Flexible for travel and multi-site responsibilities</li>
+</ul>
 
-            <li>
-                <strong>Postgraduate Diploma in European Management</strong> | 
-                Royal Holloway, University of London
-            </li>
+<p>
+Strong commitment to integrity, inclusion and corporate responsibility, with a consistent focus on building trusted long-term relationships and delivering sustainable business value in regulated environments.
+</p>
 
-            <li>
-                <strong>BA in Language and Information Technology</strong> | 
-                University of Wolverhampton
-            </li>
-
-            <li>
-                <strong>IUT Techniques de Commercialisation & Marketing</strong> | 
-                Université Nancy II
-            </li>
-        </ul>
-    </div>
-
-    <!-- ADDITIONAL INFORMATION & VALUES -->
-    <div class="section">
-        <div class="section-title">Additional Information & Professional Values</div>
-
-        <ul>
-            <li>Immediate availability</li>
-            <li>Registered with ADEM (Luxembourg & cross-border opportunities)</li>
-            <li>Full mobility – Category A & B driving licences</li>
-            <li>Flexible for travel and multi-site responsibilities</li>
-        </ul>
-
-        <p style="margin-top:15px; max-width:700px;">
-            Strong commitment to integrity, inclusion and corporate responsibility,
-            with a consistent focus on building trusted long-term relationships
-            and delivering sustainable business value in regulated environments.
-        </p>
-    </div>
-
-    <!-- FOOTER -->
-    <div class="footer">
-        Contact:
-        <a href="mailto:patgritti@gmail.com">
-            patgritti@gmail.com
-        </a>
-    </div>
+<div class="footer">
+Contact: <a href="mailto:patgritti@gmail.com">patgritti@gmail.com</a>
+</div>
 
 </div>
 
