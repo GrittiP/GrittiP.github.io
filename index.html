@@ -20,7 +20,12 @@ body {
 }
 
 h1 { margin-bottom: 10px; }
-h2 { font-weight: normal; margin-top: 60px; }
+
+.section-title {
+    margin-top: 70px;
+    font-weight: bold;
+    font-size: 20px;
+}
 
 .grid {
     display: grid;
@@ -47,10 +52,9 @@ h2 { font-weight: normal; margin-top: 60px; }
     transform: translateY(-2px);
 }
 
-/* CONTENEUR VIGNETTE */
+/* VIGNETTES */
+
 .thumb {
-    width: 100%;
-    max-width: 240px;      /* taille volontairement petite */
     margin: 0 auto 15px auto;
     background: #f2f2f2;
     display: flex;
@@ -60,13 +64,15 @@ h2 { font-weight: normal; margin-top: 60px; }
     border-radius: 4px;
 }
 
-/* Portrait */
+/* Portrait plus petit */
 .thumb-portrait {
+    width: 180px;
     aspect-ratio: 3 / 5;
 }
 
-/* Paysage */
+/* Paysage un peu plus large */
 .thumb-landscape {
+    width: 260px;
     aspect-ratio: 5 / 3;
 }
 
@@ -85,10 +91,6 @@ h2 { font-weight: normal; margin-top: 60px; }
     font-size: 14px;
     color: #555;
     margin: 0;
-}
-
-.contact {
-    margin-top: 60px;
 }
 
 .disclaimer {
@@ -110,8 +112,10 @@ h2 { font-weight: normal; margin-top: 60px; }
     <img src="photo.jpg" style="width:150px;">
     <div>
         <h1>Patrick Gritti</h1>
-        <h2>Data Analyst orienté Business | Pilotage & Performance</h2>
-        <p style="margin-top:10px;">
+        <p style="font-weight:bold; margin:5px 0;">
+            Data Analyst orienté Business | Pilotage & Performance
+        </p>
+        <p>
             Consultant Data spécialisé en analyse stratégique, structuration des besoins métiers 
             et transformation de données en leviers décisionnels.
         </p>
@@ -124,7 +128,7 @@ compréhension du besoin, structuration & méthode, démonstration technique et 
 </p>
 
 <!-- 1 -->
-<h2>1️⃣ Compréhension du besoin Aéroworld</h2>
+<div class="section-title">1. Compréhension du besoin Aéroworld</div>
 
 <a href="Analyse_Besoins.pdf" target="_blank" class="card">
 <div class="card-box">
@@ -137,7 +141,7 @@ compréhension du besoin, structuration & méthode, démonstration technique et 
 </a>
 
 <!-- 2 -->
-<h2>2️⃣ Structuration & méthode</h2>
+<div class="section-title">2. Structuration & méthode</div>
 
 <div class="grid">
 
@@ -157,14 +161,14 @@ compréhension du besoin, structuration & méthode, démonstration technique et 
 <img src="Gantt.jpg">
 </div>
 <h3>Diagramme de Gantt</h3>
-<p>Planification structurée des phases et sécurisation du déroulement.</p>
+<p>Planification structurée et sécurisation du déroulement.</p>
 </div>
 </a>
 
 </div>
 
 <!-- 3 -->
-<h2>3️⃣ Démonstration technique</h2>
+<div class="section-title">3. Démonstration technique</div>
 
 <div class="grid">
 
@@ -174,7 +178,7 @@ compréhension du besoin, structuration & méthode, démonstration technique et 
 <img src="Dashboard_pilotage.jpg">
 </div>
 <h3>Pilotage global activité & satisfaction</h3>
-<p>Performance financière, activité commerciale et NPS consolidés.</p>
+<p>Performance financière, activité commerciale et NPS.</p>
 </div>
 </a>
 
@@ -184,7 +188,7 @@ compréhension du besoin, structuration & méthode, démonstration technique et 
 <img src="doc_tech.jpg">
 </div>
 <h3>Documentation technique Power BI</h3>
-<p>Modélisation, mesures DAX et graphique combiné avancé.</p>
+<p>Modélisation des données et mesures DAX.</p>
 </div>
 </a>
 
@@ -194,14 +198,14 @@ compréhension du besoin, structuration & méthode, démonstration technique et 
 <img src="video.jpg">
 </div>
 <h3>Vidéo – Construction d’un graphique combiné</h3>
-<p>Démonstration complète : modèle, DAX et gestion avancée des filtres.</p>
+<p>Démonstration complète : modèle, DAX et filtres.</p>
 </div>
 </a>
 
 </div>
 
 <!-- 4 -->
-<h2>4️⃣ Profil & projection</h2>
+<div class="section-title">4. Profil & projection</div>
 
 <div class="grid">
 
@@ -221,7 +225,7 @@ compréhension du besoin, structuration & méthode, démonstration technique et 
 <img src="Dashboard_veille.jpg">
 </div>
 <h3>Veille métier Data</h3>
-<p>Suivi de l’évolution du rôle de Data Analyst et des tendances du marché.</p>
+<p>Suivi de l’évolution du rôle de Data Analyst.</p>
 </div>
 </a>
 
@@ -231,18 +235,17 @@ compréhension du besoin, structuration & méthode, démonstration technique et 
 <img src="carte_mentale.jpg">
 </div>
 <h3>Carte mentale – Positionnement stratégique</h3>
-<p>Vision globale : compétences, posture, projets et ambition d’évolution.</p>
+<p>Vision globale : compétences, posture et projets réalisés.</p>
 </div>
 </a>
 
 </div>
 
 <!-- CONTACT -->
-<div class="contact">
-<h2>Contact</h2>
-<ul>
-<li>Email : patgritti@gmail.com</li>
-</ul>
+<div class="section-title">Contact</div>
+
+<div class="card-box" style="margin-top:20px; text-align:left;">
+<p>Email : patgritti@gmail.com</p>
 </div>
 
 <div class="disclaimer">
