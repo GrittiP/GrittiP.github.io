@@ -22,14 +22,10 @@ body {
 h1 { margin-bottom: 10px; }
 h2 { font-weight: normal; margin-top: 60px; }
 
-.section {
-    margin-top: 60px;
-}
-
 .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    gap: 40px;
     margin-top: 30px;
 }
 
@@ -41,8 +37,9 @@ h2 { font-weight: normal; margin-top: 60px; }
 .card-box {
     border: 1px solid #eee;
     padding: 20px;
-    transition: 0.2s ease;
     background: white;
+    transition: 0.2s ease;
+    text-align: center;
 }
 
 .card-box:hover {
@@ -50,30 +47,38 @@ h2 { font-weight: normal; margin-top: 60px; }
     transform: translateY(-2px);
 }
 
-.card img {
+/* CONTENEUR VIGNETTE */
+.thumb {
     width: 100%;
+    max-width: 240px;      /* taille volontairement petite */
+    margin: 0 auto 15px auto;
+    background: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
     border-radius: 4px;
-    margin-bottom: 15px;
 }
 
-/* Documents A4 */
-.doc img {
-    aspect-ratio: 3 / 4;
+/* Portrait */
+.thumb-portrait {
+    aspect-ratio: 3 / 5;
+}
+
+/* Paysage */
+.thumb-landscape {
+    aspect-ratio: 5 / 3;
+}
+
+.thumb img {
+    width: 100%;
+    height: 100%;
     object-fit: contain;
-    background: #f3f3f3;
-    padding: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-}
-
-/* Dashboards & visuels */
-.visual img {
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
 }
 
 .card h3 {
-    margin: 0 0 10px 0;
-    font-size: 17px;
+    font-size: 16px;
+    margin: 10px 0 8px 0;
 }
 
 .card p {
@@ -114,100 +119,117 @@ h2 { font-weight: normal; margin-top: 60px; }
 </div>
 
 <p style="margin-top:40px;">
-Ce portfolio structure ma candidature autour de quatre dimensions : 
-compréhension du besoin, structuration et méthode, démonstration technique 
-et projection professionnelle.
+Ce portfolio structure ma candidature autour de quatre dimensions :
+compréhension du besoin, structuration & méthode, démonstration technique et projection professionnelle.
 </p>
 
-<!-- 1. COMPREHENSION -->
+<!-- 1 -->
 <h2>1️⃣ Compréhension du besoin Aéroworld</h2>
 
-<a href="Analyse_Besoins.pdf" target="_blank" class="card doc">
+<a href="Analyse_Besoins.pdf" target="_blank" class="card">
 <div class="card-box">
+<div class="thumb thumb-portrait">
 <img src="analyse.jpg">
+</div>
 <h3>Analyse des besoins</h3>
-<p>Identification des enjeux métier, problématique data et attentes stratégiques.</p>
+<p>Identification des enjeux métier et problématique data.</p>
 </div>
 </a>
 
-<!-- 2. STRUCTURATION -->
+<!-- 2 -->
 <h2>2️⃣ Structuration & méthode</h2>
 
 <div class="grid">
 
-<a href="Cahier_Des_Charges.pdf" target="_blank" class="card doc">
+<a href="Cahier_Des_Charges.pdf" target="_blank" class="card">
 <div class="card-box">
+<div class="thumb thumb-portrait">
 <img src="Cahier.jpg">
+</div>
 <h3>Cahier des charges</h3>
-<p>Formalisation des objectifs, périmètre, risques et indicateurs de réussite.</p>
+<p>Objectifs, périmètre, contraintes et indicateurs de réussite.</p>
 </div>
 </a>
 
-<a href="Gantt.pdf" target="_blank" class="card doc">
+<a href="Gantt.pdf" target="_blank" class="card">
 <div class="card-box">
+<div class="thumb thumb-landscape">
 <img src="Gantt.jpg">
+</div>
 <h3>Diagramme de Gantt</h3>
-<p>Organisation temporelle et pilotage structuré des phases du projet.</p>
+<p>Planification structurée des phases et sécurisation du déroulement.</p>
 </div>
 </a>
 
 </div>
 
-<!-- 3. DEMONSTRATION TECHNIQUE -->
+<!-- 3 -->
 <h2>3️⃣ Démonstration technique</h2>
 
 <div class="grid">
 
-<a href="Dashboard_Aeroworld.pdf" target="_blank" class="card visual">
+<a href="Dashboard_Aeroworld.pdf" target="_blank" class="card">
 <div class="card-box">
+<div class="thumb thumb-landscape">
 <img src="Dashboard_pilotage.jpg">
+</div>
 <h3>Pilotage global activité & satisfaction</h3>
 <p>Performance financière, activité commerciale et NPS consolidés.</p>
 </div>
 </a>
 
-<a href="Documentation_Technique.pdf" target="_blank" class="card doc">
+<a href="Documentation_Technique.pdf" target="_blank" class="card">
 <div class="card-box">
+<div class="thumb thumb-portrait">
 <img src="doc_tech.jpg">
+</div>
 <h3>Documentation technique Power BI</h3>
-<p>Modélisation des données, mesures DAX et graphique combiné avancé.</p>
+<p>Modélisation, mesures DAX et graphique combiné avancé.</p>
 </div>
 </a>
 
-<a href="https://www.loom.com/share/c80ed81145274c029229ad526860aed6" target="_blank" class="card visual">
+<a href="https://www.loom.com/share/c80ed81145274c029229ad526860aed6" target="_blank" class="card">
 <div class="card-box">
+<div class="thumb thumb-landscape">
 <img src="video.jpg">
+</div>
 <h3>Vidéo – Construction d’un graphique combiné</h3>
-<p>Démonstration complète : modèle, DAX et gestion avancée du filtre.</p>
+<p>Démonstration complète : modèle, DAX et gestion avancée des filtres.</p>
 </div>
 </a>
 
 </div>
 
-<!-- 4. PROFIL & PROJECTION -->
+<!-- 4 -->
 <h2>4️⃣ Profil & projection</h2>
 
 <div class="grid">
 
-<a href="Dashboard_Profil.pdf" target="_blank" class="card visual">
+<a href="Dashboard_Profil.pdf" target="_blank" class="card">
 <div class="card-box">
+<div class="thumb thumb-landscape">
 <img src="Dashboard_Profil.jpg">
-<h3>Profil Data Analyst orienté Business</h3>
+</div>
+<h3>Dashboard Profil</h3>
 <p>Synthèse des compétences techniques et posture professionnelle.</p>
 </div>
 </a>
 
-<a href="Dashboard_Veille.pdf" target="_blank" class="card visual">
+<a href="Dashboard_Veille.pdf" target="_blank" class="card">
 <div class="card-box">
+<div class="thumb thumb-landscape">
 <img src="Dashboard_veille.jpg">
+</div>
 <h3>Veille métier Data</h3>
-<p>Suivi de l’évolution du rôle de Data Analyst et des enjeux du marché.</p>
+<p>Suivi de l’évolution du rôle de Data Analyst et des tendances du marché.</p>
 </div>
 </a>
 
-<a href="carte_mentale.jpg" target="_blank" class="card visual">
+<a href="carte_mentale.jpg" target="_blank" class="card">
 <div class="card-box">
+<div class="thumb thumb-landscape">
 <img src="carte_mentale.jpg">
+</div>
 <h3>Carte mentale – Positionnement stratégique</h3>
 <p>Vision globale : compétences, posture, projets et ambition d’évolution.</p>
 </div>
