@@ -19,25 +19,18 @@ body {
     padding: 60px;
 }
 
-h1 { 
-    margin-bottom: 10px; 
-}
-
-h2 { 
-    font-weight: normal; 
-    margin: 0 0 20px 0;
-    font-size: 22px;
-}
+h1 { margin-bottom: 10px; }
+h2 { font-weight: normal; margin-top: 60px; }
 
 .section {
-    margin-top: 70px;
+    margin-top: 60px;
 }
 
 .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 35px;
-    margin-top: 25px;
+    gap: 30px;
+    margin-top: 30px;
 }
 
 .card {
@@ -48,29 +41,38 @@ h2 {
 .card-box {
     border: 1px solid #eee;
     padding: 20px;
+    transition: 0.2s ease;
     background: white;
-    transition: 0.25s ease;
-    border-radius: 6px;
 }
 
 .card-box:hover {
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    transform: translateY(-2px);
 }
 
 .card img {
     width: 100%;
-    aspect-ratio: 3 / 4;      /* Ratio proche A4 */
-    object-fit: contain;      /* Respecte le document */
-    background: #f3f3f3;      /* Fond neutre */
-    padding: 10px;            /* Effet marge */
     border-radius: 4px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     margin-bottom: 15px;
 }
 
+/* Documents A4 */
+.doc img {
+    aspect-ratio: 3 / 4;
+    object-fit: contain;
+    background: #f3f3f3;
+    padding: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* Dashboards & visuels */
+.visual img {
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
 .card h3 {
-    margin: 0 0 8px 0;
+    margin: 0 0 10px 0;
     font-size: 17px;
 }
 
@@ -78,21 +80,10 @@ h2 {
     font-size: 14px;
     color: #555;
     margin: 0;
-    line-height: 1.5;
-}
-
-.intro-text {
-    margin-top: 40px;
-    line-height: 1.6;
-    color: #444;
 }
 
 .contact {
-    margin-top: 80px;
-}
-
-.contact ul {
-    padding-left: 18px;
+    margin-top: 60px;
 }
 
 .disclaimer {
@@ -111,126 +102,117 @@ h2 {
 
 <!-- HEADER -->
 <div style="display:flex; gap:40px; align-items:center;">
-    <img src="photo.jpg" style="width:150px; border-radius:6px;">
+    <img src="photo.jpg" style="width:150px;">
     <div>
         <h1>Patrick Gritti</h1>
         <h2>Data Analyst orienté Business | Pilotage & Performance</h2>
-        <p style="margin-top:10px; line-height:1.5;">
-            Data Analyst spécialisé en structuration de projets data, pilotage de la performance
-            et transformation des données en leviers décisionnels.
+        <p style="margin-top:10px;">
+            Consultant Data spécialisé en analyse stratégique, structuration des besoins métiers 
+            et transformation de données en leviers décisionnels.
         </p>
     </div>
 </div>
 
-<p class="intro-text">
-Ce portfolio illustre ma candidature au poste de Data Analyst chez Aéroworld. 
-Il est structuré en quatre parties : compréhension du besoin, structuration & méthode,
-démonstration technique et profil & projection.
+<p style="margin-top:40px;">
+Ce portfolio structure ma candidature autour de quatre dimensions : 
+compréhension du besoin, structuration et méthode, démonstration technique 
+et projection professionnelle.
 </p>
 
-<!-- 1️⃣ COMPRÉHENSION DU BESOIN -->
-<div class="section">
-<h2>1. Compréhension du besoin Aéroworld</h2>
+<!-- 1. COMPREHENSION -->
+<h2>1️⃣ Compréhension du besoin Aéroworld</h2>
 
-<a href="Analyse_Besoins.pdf" target="_blank" class="card">
+<a href="Analyse_Besoins.pdf" target="_blank" class="card doc">
 <div class="card-box">
 <img src="analyse.jpg">
 <h3>Analyse des besoins</h3>
-<p>Compréhension du contexte aéronautique et des attentes liées au poste.</p>
+<p>Identification des enjeux métier, problématique data et attentes stratégiques.</p>
 </div>
 </a>
 
-</div>
-
-<!-- 2️⃣ STRUCTURATION & MÉTHODE -->
-<div class="section">
-<h2>2. Structuration & méthode</h2>
+<!-- 2. STRUCTURATION -->
+<h2>2️⃣ Structuration & méthode</h2>
 
 <div class="grid">
 
-<a href="Cahier_Des_Charges.pdf" target="_blank" class="card">
+<a href="Cahier_Des_Charges.pdf" target="_blank" class="card doc">
 <div class="card-box">
 <img src="Cahier.jpg">
 <h3>Cahier des charges</h3>
-<p>Formalisation du périmètre, des objectifs et des indicateurs de réussite.</p>
+<p>Formalisation des objectifs, périmètre, risques et indicateurs de réussite.</p>
 </div>
 </a>
 
-<a href="Gantt.pdf" target="_blank" class="card">
+<a href="Gantt.pdf" target="_blank" class="card doc">
 <div class="card-box">
 <img src="Gantt.jpg">
 <h3>Diagramme de Gantt</h3>
-<p>Planification structurée des phases et organisation du travail.</p>
+<p>Organisation temporelle et pilotage structuré des phases du projet.</p>
 </div>
 </a>
 
 </div>
-</div>
 
-<!-- 3️⃣ DÉMONSTRATION TECHNIQUE -->
-<div class="section">
-<h2>3. Démonstration technique</h2>
+<!-- 3. DEMONSTRATION TECHNIQUE -->
+<h2>3️⃣ Démonstration technique</h2>
 
 <div class="grid">
 
-<a href="Dashboard_Aeroworld.pdf" target="_blank" class="card">
+<a href="Dashboard_Aeroworld.pdf" target="_blank" class="card visual">
 <div class="card-box">
 <img src="Dashboard_pilotage.jpg">
-<h3>Dashboard pilotage activité & satisfaction</h3>
-<p>Outil décisionnel : performance financière, activité commerciale et NPS.</p>
+<h3>Pilotage global activité & satisfaction</h3>
+<p>Performance financière, activité commerciale et NPS consolidés.</p>
 </div>
 </a>
 
-<a href="Documentation_Technique.pdf" target="_blank" class="card">
+<a href="Documentation_Technique.pdf" target="_blank" class="card doc">
 <div class="card-box">
 <img src="doc_tech.jpg">
 <h3>Documentation technique Power BI</h3>
-<p>Modélisation, mesures DAX et gestion du contexte de filtre.</p>
+<p>Modélisation des données, mesures DAX et graphique combiné avancé.</p>
 </div>
 </a>
 
-<a href="https://www.loom.com/share/c80ed81145274c029229ad526860aed6" target="_blank" class="card">
+<a href="https://www.loom.com/share/c80ed81145274c029229ad526860aed6" target="_blank" class="card visual">
 <div class="card-box">
 <img src="video.jpg">
 <h3>Vidéo – Construction d’un graphique combiné</h3>
-<p>Démonstration de la logique analytique et du modèle.</p>
+<p>Démonstration complète : modèle, DAX et gestion avancée du filtre.</p>
 </div>
 </a>
 
 </div>
-</div>
 
-<!-- 4️⃣ PROFIL & PROJECTION -->
-<div class="section">
-<h2>4. Profil & projection</h2>
+<!-- 4. PROFIL & PROJECTION -->
+<h2>4️⃣ Profil & projection</h2>
 
 <div class="grid">
 
-<a href="Dashboard_Profil.pdf" target="_blank" class="card">
+<a href="Dashboard_Profil.pdf" target="_blank" class="card visual">
 <div class="card-box">
 <img src="Dashboard_Profil.jpg">
 <h3>Profil Data Analyst orienté Business</h3>
-<p>Compétences techniques, méthodologiques et soft skills.</p>
+<p>Synthèse des compétences techniques et posture professionnelle.</p>
 </div>
 </a>
 
-<a href="Dashboard_Veille.pdf" target="_blank" class="card">
+<a href="Dashboard_Veille.pdf" target="_blank" class="card visual">
 <div class="card-box">
 <img src="Dashboard_veille.jpg">
-<h3>Veille métier – Évolution du rôle Data Analyst</h3>
-<p>Analyse des tendances et projection professionnelle.</p>
+<h3>Veille métier Data</h3>
+<p>Suivi de l’évolution du rôle de Data Analyst et des enjeux du marché.</p>
 </div>
 </a>
 
-<a href="carte_mentale.jpg" target="_blank" class="card">
+<a href="carte_mentale.jpg" target="_blank" class="card visual">
 <div class="card-box">
 <img src="carte_mentale.jpg">
-<h3>Carte mentale – Cohérence du profil & projets</h3>
-<p>Vision globale : compétences, posture, projets réalisés et objectifs.</p>
+<h3>Carte mentale – Positionnement stratégique</h3>
+<p>Vision globale : compétences, posture, projets et ambition d’évolution.</p>
 </div>
 </a>
 
-</div>
 </div>
 
 <!-- CONTACT -->
