@@ -21,12 +21,14 @@ body {
 
 h1 { margin-bottom: 10px; }
 
+/* TITRES PARTIES */
 .section-title {
     margin-top: 70px;
-    font-weight: bold;
     font-size: 20px;
+    font-weight: bold;
 }
 
+/* GRILLE */
 .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -40,8 +42,8 @@ h1 { margin-bottom: 10px; }
 }
 
 .card-box {
-    border: 1px solid #eee;
-    padding: 20px;
+    border: 1px solid #e5e5e5;
+    padding: 25px;
     background: white;
     transition: 0.2s ease;
     text-align: center;
@@ -52,33 +54,34 @@ h1 { margin-bottom: 10px; }
     transform: translateY(-2px);
 }
 
-/* VIGNETTES */
+/* VIGNETTES IDENTIQUES */
 
-.thumb {
+/* Portrait strict */
+.thumb-portrait {
+    width: 200px;
+    height: 330px; /* même taille pour tous les A4 */
     margin: 0 auto 15px auto;
     background: #f2f2f2;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
-    border-radius: 4px;
 }
 
-/* Portrait plus petit */
-.thumb-portrait {
-    width: 180px;
-    aspect-ratio: 3 / 5;
-}
-
-/* Paysage un peu plus large */
+/* Paysage strict */
 .thumb-landscape {
     width: 260px;
-    aspect-ratio: 5 / 3;
+    height: 160px; /* même taille pour tous les dashboards */
+    margin: 0 auto 15px auto;
+    background: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.thumb img {
-    width: 100%;
-    height: 100%;
+.thumb-portrait img,
+.thumb-landscape img {
+    max-width: 100%;
+    max-height: 100%;
     object-fit: contain;
 }
 
@@ -132,7 +135,7 @@ compréhension du besoin, structuration & méthode, démonstration technique et 
 
 <a href="Analyse_Besoins.pdf" target="_blank" class="card">
 <div class="card-box">
-<div class="thumb thumb-portrait">
+<div class="thumb-portrait">
 <img src="analyse.jpg">
 </div>
 <h3>Analyse des besoins</h3>
@@ -147,7 +150,7 @@ compréhension du besoin, structuration & méthode, démonstration technique et 
 
 <a href="Cahier_Des_Charges.pdf" target="_blank" class="card">
 <div class="card-box">
-<div class="thumb thumb-portrait">
+<div class="thumb-portrait">
 <img src="Cahier.jpg">
 </div>
 <h3>Cahier des charges</h3>
@@ -157,7 +160,7 @@ compréhension du besoin, structuration & méthode, démonstration technique et 
 
 <a href="Gantt.pdf" target="_blank" class="card">
 <div class="card-box">
-<div class="thumb thumb-landscape">
+<div class="thumb-landscape">
 <img src="Gantt.jpg">
 </div>
 <h3>Diagramme de Gantt</h3>
@@ -174,7 +177,7 @@ compréhension du besoin, structuration & méthode, démonstration technique et 
 
 <a href="Dashboard_Aeroworld.pdf" target="_blank" class="card">
 <div class="card-box">
-<div class="thumb thumb-landscape">
+<div class="thumb-landscape">
 <img src="Dashboard_pilotage.jpg">
 </div>
 <h3>Pilotage global activité & satisfaction</h3>
@@ -184,7 +187,7 @@ compréhension du besoin, structuration & méthode, démonstration technique et 
 
 <a href="Documentation_Technique.pdf" target="_blank" class="card">
 <div class="card-box">
-<div class="thumb thumb-portrait">
+<div class="thumb-landscape">
 <img src="doc_tech.jpg">
 </div>
 <h3>Documentation technique Power BI</h3>
@@ -194,7 +197,7 @@ compréhension du besoin, structuration & méthode, démonstration technique et 
 
 <a href="https://www.loom.com/share/c80ed81145274c029229ad526860aed6" target="_blank" class="card">
 <div class="card-box">
-<div class="thumb thumb-landscape">
+<div class="thumb-landscape">
 <img src="video.jpg">
 </div>
 <h3>Vidéo – Construction d’un graphique combiné</h3>
@@ -211,7 +214,7 @@ compréhension du besoin, structuration & méthode, démonstration technique et 
 
 <a href="Dashboard_Profil.pdf" target="_blank" class="card">
 <div class="card-box">
-<div class="thumb thumb-landscape">
+<div class="thumb-landscape">
 <img src="Dashboard_Profil.jpg">
 </div>
 <h3>Dashboard Profil</h3>
@@ -221,7 +224,7 @@ compréhension du besoin, structuration & méthode, démonstration technique et 
 
 <a href="Dashboard_Veille.pdf" target="_blank" class="card">
 <div class="card-box">
-<div class="thumb thumb-landscape">
+<div class="thumb-landscape">
 <img src="Dashboard_veille.jpg">
 </div>
 <h3>Veille métier Data</h3>
@@ -231,7 +234,7 @@ compréhension du besoin, structuration & méthode, démonstration technique et 
 
 <a href="carte_mentale.jpg" target="_blank" class="card">
 <div class="card-box">
-<div class="thumb thumb-landscape">
+<div class="thumb-landscape">
 <img src="carte_mentale.jpg">
 </div>
 <h3>Carte mentale – Positionnement stratégique</h3>
